@@ -1,0 +1,265 @@
+﻿:root {
+  font-size: 16px;
+  font-family: "Century Gothic", "URW Gothic", "Franklin Gothic Medium",
+    "Arial Narrow", Arial, sans-serif;
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+}
+
+body {
+  background: url("./Resources/bg.jpg");
+  background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  /* border: 1px solid #fff; */
+  height: 100vh;
+  display: flex;
+}
+
+.header .left {
+  /* border: 1px solid #fff; */
+}
+
+.header .right {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  /* border: 1px solid #fff; */
+}
+
+.header .right::-webkit-scrollbar {
+  display: none;
+}
+
+.songlist {
+  display: block;
+  padding: 0;
+}
+
+.songitem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  width: 100%;
+  /* border: 1px solid #fff; */
+  border-radius: 10px;
+  background: rgba(9, 67, 32, 0.3);
+  margin-bottom: 2rem;
+  /* padding-right: 20px; */
+}
+
+.songitem:hover {
+  background-color: rgb(164, 168, 180, 0.2);
+}
+
+.songitem img {
+  width: fit-content;
+  border-radius: 10px 10px 0 0;
+}
+
+.songitem .songlistplay {
+  position: absolute;
+  left: 42%;
+  top: 30%;
+  transition: 0.3 linear;
+  cursor: pointer;
+}
+
+.songitem .songlistplay .far {
+  font-size: 30px;
+}
+
+.songlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.songitem img {
+  width: 100%;
+  height: auto;
+}
+
+.songlistplay i img {
+  width: 1rem;
+}
+
+.bottom {
+  bottom: 0;
+  position: absolute;
+  background-color: #23232e;
+  z-index: 2;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border: 1px solid #fff;
+}
+
+.bottom .songinfo h5 {
+  width: 130px;
+  font-size: 13px;
+  margin-left: 15px;
+  color: #fff;
+  line-height: 15px;
+}
+
+.bottom .icons {
+  display: flex;
+}
+
+.bottom .icons img {
+  cursor: pointer;
+  width: 2rem;
+  margin-top: 0.5rem;
+}
+
+.bottom .icons img:hover {
+  filter: drop-shadow(0 0 0.75rem #aa10d8);
+}
+
+.bottom .progress {
+  display: flex;
+}
+
+.bottom .progress #currentStart {
+  margin: 0 0 0 20px;
+}
+
+.bottom .progress #currentEnd {
+  margin: 0 0 0 20px;
+}
+
+.bottom .bar {
+  position: relative;
+  width: 43%;
+  height: 2px;
+  background: rgb(105, 105, 170, 0.1);
+  margin: 0 15px 0 10px;
+}
+
+.bottom .bar .bar2 {
+  position: absolute;
+  background: #36e2ec;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  transition: 0.3s linear;
+}
+
+.bottom .bar .dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #36e2ec;
+  border-radius: 50%;
+  left: 0%;
+  top: -1px;
+  transition: 0.3s linear;
+}
+
+.bottom .bar .dot::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #36e2ec;
+  border-radius: 50%;
+  left: -6px;
+  top: -6px;
+  box-shadow: inset 0 0 3px #36e2ec;
+}
+
+.bottom .vol {
+  position: relative;
+  width: 100px;
+  height: 2px;
+  margin-left: 50px;
+  background-color: rgb(105, 105, 170, 0.1);
+}
+
+.bottom .vol .bi {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  top: -17px;
+  left: -30px;
+}
+
+.bottom .vol input {
+  position: absolute;
+  width: 100%;
+  top: -6px;
+  left: 0;
+  cursor: pointer;
+  z-index: 999999;
+  opacity: 0;
+}
+
+.bottom .vol .vol_bar {
+  position: absolute;
+  background: #36e2ec;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: 0.3s linear;
+}
+
+.bottom .vol .dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #36e2ec;
+  border-radius: 50%;
+  left: 100%;
+  top: -1px;
+  transition: 0.3s linear;
+}
+
+.bottom .vol .dot::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #36e2ec;
+  border-radius: 50%;
+  left: -6px;
+  top: -6px;
+  box-shadow: inset 0 0 3px #36e2ec;
+}
+
+/* .songinfo {
+  position: absolute;
+  left: 16vw;
+}
+
+.songinfo img {
+  opacity: 0;
+  transition: 1s ease-in;
+} */
