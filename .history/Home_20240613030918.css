@@ -118,51 +118,28 @@ li {
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  /* padding: 0 20px; */
-  /* border: 1px solid #fff; */
-}
-
-.bottom .songinfo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* border: 1px solid #fff; */
-  width: 20%;
-}
-
-.bottom .songinfo #masterSongName {
-  font-size: 13px;
-  margin-left: 10px;
-  color: #fff;
-  line-height: 15px;
+  padding: 0 20px;
+  border: 1px solid #fff;
 }
 
 .bottom .songinfo h5 {
+  width: 130px;
   font-size: 13px;
   margin-left: 15px;
   color: #fff;
   line-height: 15px;
 }
 
-.bottom .songinfo img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 0 0 10px 10px;
-}
-
 .bottom .icons {
-  /* border: 1px solid #fff; */
-  width: 10%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  font-size: 15px;
+  color: #fff;
+  margin: 0 40px 0 60px;
 }
 
-.bottom .icons .fas {
+.bottom .icons img {
   cursor: pointer;
+  width: 2rem;
+  margin-top: 0.5rem;
 }
 
 .bottom .icons img:hover {
@@ -177,17 +154,9 @@ li {
   margin: 0 0 0 20px;
 }
 
-.bottom .time {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  /* border: 1px solid #fff; */
-}
-
 .bottom .bar {
   position: relative;
-  width: 800%;
+  width: 50%;
   height: 2px;
   background: rgb(105, 105, 170, 0.1);
   margin: 0 15px 0 10px;
@@ -236,7 +205,6 @@ li {
 }
 
 .bottom .vol {
-  display: flex;
   position: relative;
   width: 200px;
   height: 2px;

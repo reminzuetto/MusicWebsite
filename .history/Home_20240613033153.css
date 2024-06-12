@@ -161,8 +161,10 @@ li {
   gap: 10px;
 }
 
-.bottom .icons .fas {
+.bottom .icons img {
   cursor: pointer;
+  width: 2rem;
+  margin-top: 0.5rem;
 }
 
 .bottom .icons img:hover {
@@ -179,15 +181,13 @@ li {
 
 .bottom .time {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  /* border: 1px solid #fff; */
+  align-items: center
+  width: 40%;
 }
 
 .bottom .bar {
   position: relative;
-  width: 800%;
+  width: 40%;
   height: 2px;
   background: rgb(105, 105, 170, 0.1);
   margin: 0 15px 0 10px;
@@ -236,7 +236,6 @@ li {
 }
 
 .bottom .vol {
-  display: flex;
   position: relative;
   width: 200px;
   height: 2px;

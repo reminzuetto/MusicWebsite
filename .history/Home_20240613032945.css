@@ -161,8 +161,10 @@ li {
   gap: 10px;
 }
 
-.bottom .icons .fas {
+.bottom .icons img {
   cursor: pointer;
+  width: 2rem;
+  margin-top: 0.5rem;
 }
 
 .bottom .icons img:hover {
@@ -177,20 +179,13 @@ li {
   margin: 0 0 0 20px;
 }
 
-.bottom .time {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  /* border: 1px solid #fff; */
-}
-
 .bottom .bar {
   position: relative;
-  width: 800%;
+  width: 50%;
   height: 2px;
   background: rgb(105, 105, 170, 0.1);
   margin: 0 15px 0 10px;
+  border: 1px solid #fff;
 }
 
 .bottom .bar .bar2 {
@@ -236,12 +231,12 @@ li {
 }
 
 .bottom .vol {
-  display: flex;
   position: relative;
   width: 200px;
   height: 2px;
   margin-left: 50px;
   background-color: rgb(105, 105, 170, 0.1);
+  /* border: 1px solid #fff; */
 }
 
 .bottom .vol .bi {

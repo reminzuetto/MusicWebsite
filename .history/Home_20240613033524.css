@@ -163,6 +163,8 @@ li {
 
 .bottom .icons .fas {
   cursor: pointer;
+  width: 2rem;
+  margin-top: 0.5rem;
 }
 
 .bottom .icons img:hover {

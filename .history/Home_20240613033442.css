@@ -159,10 +159,12 @@ li {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 
-.bottom .icons .fas {
-  cursor: pointer;
+.bottom .icons img {
+  width: 2rem;
+  margin-top: 0.5rem;
 }
 
 .bottom .icons img:hover {
